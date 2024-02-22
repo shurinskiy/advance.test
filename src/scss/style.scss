@@ -27,15 +27,20 @@ $breakpoints: (
 );
 
 
-// @include font-face("Montserrat-ExtraLight", "DM", 100);
-// @include font-face("Montserrat-ExtraBold", "DM", 800);
-// @include font-face("Montserrat-SemiBold", "DM", 600);
-// @include font-face("Montserrat-Regular", "DM", 400);
-// @include font-face("Montserrat-Medium", "DM", 500);
-// @include font-face("Montserrat-Light", "DM", 300);
-// @include font-face("Montserrat-Black", "DM", 900);
-// @include font-face("Montserrat-Bold", "DM", 700);
-// @include font-face("Montserrat-Thin", "DM", 200);
+// @include font-face("Inter-ExtraLight", "DM", 100);
+@include font-face("Inter-ExtraBold", "DM", 800);
+@include font-face("Inter-SemiBold", "DM", 600);
+@include font-face("Inter-Regular", "DM", 400);
+@include font-face("Inter-Medium", "DM", 500);
+// @include font-face("Inter-Light", "DM", 300);
+@include font-face("Inter-Black", "DM", 900);
+@include font-face("Inter-Bold", "DM", 700);
+// @include font-face("Inter-Thin", "DM", 200);
+
+// @include font-face("SegoeUI-Light", "DM", 300);
+@include font-face("SegoeUI-Regular", "DM", 400);
+@include font-face("SegoeUI-SemiBold", "DM", 600);
+// @include font-face("SegoeUI-Bold", "DM", 700);
 
 // @import "../../node_modules/swiper/swiper";
 
@@ -69,8 +74,10 @@ body, html {
 	flex: 0 0 auto; 
 	margin-top: auto; 
 }
-
+.sprite {
+	display: none;
+}
 
 p { margin-bottom: 10px; }
-strong { font-weight: bold; }
 em { font-style: italic; }
+strong { font-weight: bold; }
