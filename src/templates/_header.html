@@ -1,3 +1,32 @@
 <header class="header @@if(this.mod){header_@@mod}">
-  
+	<div class="header__inner container">
+		<button class="header__navi-toggle">
+			<svg><use xlink:href="#icon-menu"></use></svg>
+		</button>
+		<a class="header__logo logo" href="./">
+			<img src="./images/logo.svg" alt="">
+			<span>Rangi.ru</span>
+		</a>
+		<div class="header__navi h-navi">
+			<button class="h-navi__close">
+				<svg><use xlink:href="#icon-close"></use></svg>
+			</button>
+			<nav class="h-navi__menu" data-scroll-lock-scrollable>
+				<a class="h-navi__link h-navi__link_accent button" href="./">
+					<svg><use xlink:href="#icon-spread"></use></svg>
+					<span>Все направления</span>
+				</a>
+				<a class="h-navi__link" href="./">О сервисе</a>
+				<a class="h-navi__link" href="./">FAQ</a>
+				<a class="h-navi__link" href="./">Поддержка</a>
+				<a class="h-navi__link" href="./">Сотрудничество</a>
+				<a class="h-navi__link" href="./">Контакты</a>
+			</nav>
+		</div>
+		<div class="header__side">
+			<a class="header__search" href="./">
+				<svg><use xlink:href="#icon-zoom"></use></svg>
+			</a>
+		</div>
+	</div>
 </header>

@@ -1,0 +1,43 @@
+.header {
+	$self: &;
+	margin-bottom: 115px;
+
+	&__inner {
+		display: flex;
+	}
+
+	&__navi-toggle {
+		@extend %reset-button;
+		display: none;
+
+		svg {
+			width: 23px;
+			aspect-ratio: 1;
+		}
+	}
+
+	&__logo {
+
+	}
+
+	&__navi {
+		margin-right: auto;
+	}
+
+	&__side {
+
+	}
+
+	&__search {
+		display: flex;
+		width: 40px;
+		align-items: center;
+		justify-content: flex-end;
+		height: 100%;
+
+		svg {
+			width: 21px;
+			aspect-ratio: 1;
+		}
+	}
+}

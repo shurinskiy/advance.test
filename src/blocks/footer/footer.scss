@@ -1,0 +1,54 @@
+.footer {
+	$self: &;
+	background-color: #272F37;
+	color: #919498;
+	
+	&__top {
+		padding: 60px 0 70px;
+
+	}
+
+	&__info {
+
+	}
+
+	&__logo {
+		color: #fff !important;
+	}
+
+	&__text {
+
+	}
+
+	&__side {
+
+	}
+
+	&__bottom {
+		background-color: #1D2630;
+		padding: 30px 0;
+	}
+	
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	&__copy {
+		
+		a {
+			color: inherit;
+			text-decoration: none;
+		}
+	}
+	
+	&__dev {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+
+		a {
+			display: flex;
+		}
+	}
+}

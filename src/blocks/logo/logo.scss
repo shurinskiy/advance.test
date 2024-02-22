@@ -1,0 +1,11 @@
+.logo {
+	$self: &;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	text-decoration: none;
+	font-family: "IT", sans-serif;
+	font-size: 24px;
+	font-weight: 800;
+	color: #2A3848;
+}

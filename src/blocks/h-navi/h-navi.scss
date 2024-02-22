@@ -1,0 +1,26 @@
+.h-navi {
+	$self: &;
+	display: flex;
+	align-items: center;
+
+	&__close {
+		@extend %reset-button;
+		display: none;
+
+		svg {
+			width: 23px;
+			aspect-ratio: 1;
+		}
+	}
+
+	&__menu {
+
+	}
+
+	&__link {
+
+		&_accent {
+			padding: 12px 22px;
+		}
+	}
+}

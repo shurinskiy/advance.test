@@ -1,0 +1,30 @@
+.hero {
+	$self: &;
+	margin-bottom: 170px;
+
+	&__inner {
+
+	}
+
+	&__title {
+		font-size: 96px;
+		color: #2A3848;
+		font-weight: 900;
+		line-height: 1.05;
+		max-width: 1280px;
+		margin-bottom: 20px;
+	}
+
+	&__text {
+		color: #687186;
+		font-family: "SG", sans-serif;
+		line-height: 1.8;
+		font-size: 20px;
+		max-width: 580px;
+		margin-bottom: 47px;
+	}
+
+	&__button {
+		padding: 24px 50px;
+	}
+}

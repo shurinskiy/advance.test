@@ -1,0 +1,22 @@
+.social {
+	$self: &;
+	display: flex;
+	gap: 10px;
+
+	&__link {
+		display: block;
+		width: 37px;
+		aspect-ratio: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #333C46;
+		border-radius: 10px;
+		
+		svg {
+			fill: #fff;
+			width: 17px;
+			aspect-ratio: 1;
+		}
+	}
+}

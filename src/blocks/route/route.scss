@@ -1,0 +1,43 @@
+.route {
+	$self: &;
+
+	&__inner {
+
+	}
+
+	&__title {
+
+	}
+
+	&__items {
+
+	}
+
+	&__item {
+
+	}
+
+	&__i-title {
+
+	}
+
+	&__icon {
+		display: block;
+		width: 47px;
+		aspect-ratio: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #fff;
+		border-radius: 10px;
+		
+		svg {
+			width: 28px;
+			aspect-ratio: 1;
+		}
+	}
+
+	&__i-link {
+
+	}
+}

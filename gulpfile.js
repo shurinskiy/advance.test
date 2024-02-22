@@ -121,6 +121,7 @@ function styles() {
 function images() {
 	return gulp.src(pth.src.img)
 		.pipe($.newer(pth.pbl.img))
+		.pipe($.webp())
 		.pipe(gulp.dest(pth.pbl.img))
 		.pipe($.if(isSync, $.browserSync.stream()));
 }
@@ -146,7 +147,7 @@ function icons() {
 			symbol: {
 				dest: './',
 				sprite: '_sprite.svg',
-				// example: true
+				example: true
 			}
 		}
 	}))

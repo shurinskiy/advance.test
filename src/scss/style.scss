@@ -27,20 +27,20 @@ $breakpoints: (
 );
 
 
-// @include font-face("Inter-ExtraLight", "DM", 100);
-@include font-face("Inter-ExtraBold", "DM", 800);
-@include font-face("Inter-SemiBold", "DM", 600);
-@include font-face("Inter-Regular", "DM", 400);
-@include font-face("Inter-Medium", "DM", 500);
-// @include font-face("Inter-Light", "DM", 300);
-@include font-face("Inter-Black", "DM", 900);
-@include font-face("Inter-Bold", "DM", 700);
-// @include font-face("Inter-Thin", "DM", 200);
+// @include font-face("Inter-ExtraLight", "IT", 100);
+@include font-face("Inter-ExtraBold", "IT", 800);
+@include font-face("Inter-SemiBold", "IT", 600);
+@include font-face("Inter-Regular", "IT", 400);
+@include font-face("Inter-Medium", "IT", 500);
+// @include font-face("Inter-Light", "IT", 300);
+@include font-face("Inter-Black", "IT", 900);
+@include font-face("Inter-Bold", "IT", 700);
+// @include font-face("Inter-Thin", "IT", 200);
 
-// @include font-face("SegoeUI-Light", "DM", 300);
-@include font-face("SegoeUI-Regular", "DM", 400);
-@include font-face("SegoeUI-SemiBold", "DM", 600);
-// @include font-face("SegoeUI-Bold", "DM", 700);
+// @include font-face("SegoeUI-Light", "SG", 300);
+@include font-face("SegoeUI-Regular", "SG", 400);
+@include font-face("SegoeUI-SemiBold", "SG", 600);
+// @include font-face("SegoeUI-Bold", "SG", 700);
 
 // @import "../../node_modules/swiper/swiper";
 
@@ -49,7 +49,7 @@ $breakpoints: (
 
 :root {
 	--size: #{$basesize}px;
-	--container: 1240px;
+	--container: 1600px;
 	--gap: 24px;
 	
 	@include media('<=xs') {
@@ -62,7 +62,7 @@ body, html {
 	box-sizing: border-box;
 	background-color: #fafafa;
 	font-size: var(--size);
-	font-family: sans-serif;
+	font-family: "IT", sans-serif;
 	line-height: 1.2;
 	font-weight: 400;
 	min-height: 100vh;
