@@ -1,9 +1,11 @@
 .header {
 	$self: &;
-	margin-bottom: 115px;
+	padding: 24px 0;
+	margin-bottom: 95px;
 
 	&__inner {
 		display: flex;
+		justify-content: flex-start;
 	}
 
 	&__navi-toggle {
@@ -17,11 +19,16 @@
 	}
 
 	&__logo {
-
+		width: 100%;
+		max-width: 215px;
+		margin-right: 10px;
 	}
 
 	&__navi {
+		box-sizing: border-box;
 		margin-right: auto;
+		width: 100%;
+		max-width: 882px;
 	}
 
 	&__side {

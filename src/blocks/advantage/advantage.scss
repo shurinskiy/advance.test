@@ -1,16 +1,22 @@
 .advantage {
 	$self: &;
+	margin-bottom: 105px;
 
 	&__items {
-
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 55px 120px;
 	}
 
 	&__item {
-
+		display: flex;
+		align-items: flex-start;
+		gap: 23px;
 	}
 
 	&__icon {
 		display: block;
+		flex-shrink: 0;
 		width: 62px;
 		aspect-ratio: 1;
 		display: flex;
@@ -30,10 +36,17 @@
 	}
 
 	&__i-title {
-
+		font-size: 19px;
+		font-weight: 600;
+		color: #333845;
+		padding-top: 3px;
+		margin-bottom: 15px;
+		max-width: 230px;
+		line-height: 1.6;
 	}
-
+	
 	&__i-text {
-
+		color: #687186;
+		line-height: 1.7;
 	}
 }

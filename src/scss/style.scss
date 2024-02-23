@@ -8,7 +8,7 @@
 }
 
 // Include breakpoints badge
-body { @include screen-media(); }
+// body { @include screen-media(); }
 
 // Import media-query helper
 @import "../../node_modules/include-media/dist/_include-media.scss";
@@ -60,14 +60,16 @@ $breakpoints: (
 
 body, html {
 	box-sizing: border-box;
-	background-color: #fafafa;
+	background-color: #fff;
 	font-size: var(--size);
 	font-family: "IT", sans-serif;
+	color: #333845;
 	line-height: 1.2;
 	font-weight: 400;
 	min-height: 100vh;
 	display: flex;
 	flex-flow: column nowrap;
+	overflow-x: hidden;
 }
 // .main { flex: 1 0 auto; }
 .footer { 

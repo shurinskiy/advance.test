@@ -1,24 +1,47 @@
 .rating {
 	$self: &;
+	background: linear-gradient(90deg, rgba(42,56,72,1) 0%, rgba(70,86,104,1) 100%);
+	color: #fff;
+	padding-top: 50px;
+	padding-bottom: 115px;
+	border-radius: 0 20px 20px 0;
+	margin-bottom: 105px;
+	display: flex;
+	justify-content: flex-end;
 
 	&__inner {
-
+		box-sizing: border-box;
+		max-width: calc(var(--container) + var(--gap));
+		padding: 0 calc(var(--gap));
+		display: grid;
+		grid-template-columns: 1.11fr 0.89fr;
+		gap: 10px;
 	}
 
 	&__side {
-
+		padding-top: 65px;
+		grid-column: span 1;
 	}
-
+	
 	&__title {
-
+		margin-bottom: 37px;
+		max-width: 360px;
 	}
-
+	
 	&__text {
+		color: rgba(255, 255, 255, 0.7);
+		line-height: 1.6;
 
+		p {
+			margin-bottom: 27px;
+		}
 	}
 
 	&__image {
-
+		box-sizing: border-box;
+		grid-column: span 1;
+		transform: scale(1.47);
+		transform-origin: top left;
+		align-self: center;
 	}
-
 }

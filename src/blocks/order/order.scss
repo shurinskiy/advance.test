@@ -1,20 +1,26 @@
 .order {
 	$self: &;
+	margin-bottom: 170px;
 
 	&__inner {
-
+		max-width: 760px;
 	}
 
 	&__title {
-
+		text-align: center;
+		font-size: 34px;
+		line-height: 1.5;
+		margin-bottom: 24px;
 	}
-
+	
 	&__note {
-
+		text-align: center;
+		color: #687186;
+		margin-bottom: 55px;
 	}
 
 	&__button {
-
+		padding: 18px 40px;
+		margin: 0 auto;
 	}
-
 }

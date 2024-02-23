@@ -1,16 +1,17 @@
 .mission {
 	$self: &;
+	margin-bottom: 105px;
 
 	&__inner {
 
 	}
 
 	&__title {
-
+		margin-bottom: 20px;
 	}
 
 	&__text {
-
+		max-width: 800px;
+		line-height: 1.6;
 	}
-
 }
