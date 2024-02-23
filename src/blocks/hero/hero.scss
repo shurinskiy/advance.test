@@ -1,6 +1,14 @@
 .hero {
 	$self: &;
 	margin-bottom: 170px;
+	
+	@include media('<=xlg') {
+		margin-bottom: 140px;
+	}
+	
+	@include media('<=xxs') {
+		margin-bottom: 80px;
+	}
 
 	&__inner {
 
@@ -8,11 +16,22 @@
 
 	&__title {
 		font-size: 96px;
+		@include range(96px, 26px, 1600px, 480px);
 		color: #2A3848;
 		font-weight: 900;
 		line-height: 1.05;
 		max-width: 1280px;
 		margin-bottom: 20px;
+		
+		@include media('<=xs') {
+			line-height: 1.3;
+			font-weight: 700;
+		}
+		
+		@include media('<=xxs') {
+			margin-bottom: 10px;
+			line-height: 1.4;
+		}
 	}
 
 	&__text {
@@ -22,9 +41,26 @@
 		font-size: 20px;
 		max-width: 580px;
 		margin-bottom: 47px;
+		
+		@include media('<=md') {
+			font-size: 18px;
+		}
+		
+		@include media('<=sm') {
+			margin-bottom: 37px;
+		}
+			
+		@include media('<=xxs') {
+			font-size: 16px;
+			margin-bottom: 25px;
+		}
 	}
 
 	&__button {
 		padding: 24px 60px;
+		
+		@include media('<=sm') {
+			padding: 20px 30px;
+		}
 	}
 }

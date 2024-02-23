@@ -1,6 +1,14 @@
 .order {
 	$self: &;
 	margin-bottom: 170px;
+	
+	@include media('<=sm') {
+		margin-bottom: 120px;
+	}
+	
+	@include media('<=xs') {
+		margin-bottom: 90px;
+	}
 
 	&__inner {
 		max-width: 760px;
@@ -8,15 +16,34 @@
 
 	&__title {
 		text-align: center;
-		font-size: 34px;
 		line-height: 1.5;
 		margin-bottom: 24px;
+		font-size: 34px;
+		@include range(34px, 24px, 1600px, 480px);
+		
+		@include media('<=xs') {
+			margin-bottom: 10px;
+			line-height: 1.6;
+		}
 	}
 	
 	&__note {
 		text-align: center;
 		color: #687186;
 		margin-bottom: 55px;
+		
+		@include media('<=xs') {
+			margin-bottom: 40px;
+			line-height: 1.5;
+		}
+
+		br {
+			display: none;
+		
+			@include media('<=xs') {
+				display: block;
+			}
+		}
 	}
 
 	&__button {

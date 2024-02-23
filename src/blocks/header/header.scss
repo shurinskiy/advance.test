@@ -2,6 +2,18 @@
 	$self: &;
 	padding: 24px 0;
 	margin-bottom: 95px;
+	
+	@include media('<=lg') {
+		margin-bottom: 60px;
+	}
+	
+	@include media('<=sm') {
+		margin-bottom: 45px;
+	}
+	
+	@include media('<=xxs') {
+		padding: 12px 0;
+	}
 
 	&__inner {
 		display: flex;
@@ -11,6 +23,13 @@
 	&__navi-toggle {
 		@extend %reset-button;
 		display: none;
+		width: 40px;
+		height: 40px;
+		align-items: center;
+
+		@include media('<=md') {
+			display: flex;
+		}
 
 		svg {
 			width: 23px;
@@ -22,6 +41,18 @@
 		width: 100%;
 		max-width: 215px;
 		margin-right: 10px;
+		
+		@include media('<=md') {
+			margin-right: auto;
+		}
+		
+		&.logo {
+
+			@include media('<=xxs') {
+				font-size: 16px;
+				gap: 5px;
+			}
+		}
 	}
 
 	&__navi {
@@ -29,6 +60,22 @@
 		margin-right: auto;
 		width: 100%;
 		max-width: 882px;
+
+		@include media('<=md') {
+			width: 100%;
+			height: 100vh;
+			height: 100dvh;
+			position: fixed;
+			z-index: 12;
+			top: 0;
+			left: -350px; 
+			max-width: 350px;
+			transition: left 0.3s linear;
+	
+			&.opened {
+				left: 0;
+			}
+		}
 	}
 
 	&__side {

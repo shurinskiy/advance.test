@@ -8,6 +8,23 @@
 	margin-bottom: 105px;
 	display: flex;
 	justify-content: flex-end;
+	
+	@include media('<=md') {
+		padding-bottom: 250px;
+		margin-bottom: 130px;
+	}
+	
+	@include media('<=sm') {
+		padding-bottom: 210px;
+	}
+	
+	@include media('<=xs') {
+		padding-bottom: 190px;
+	}
+	
+	@include media('<=xxs') {
+		margin-bottom: 115px;
+	}
 
 	&__inner {
 		box-sizing: border-box;
@@ -16,16 +33,37 @@
 		display: grid;
 		grid-template-columns: 1.11fr 0.89fr;
 		gap: 10px;
+
+		@include media('<=md') {
+			display: block;
+		}
 	}
 
 	&__side {
 		padding-top: 65px;
 		grid-column: span 1;
+		
+		@include media('<=md') {
+			margin-bottom: 60px;
+		}
+		
+		@include media('<=xs') {
+			margin-bottom: 45px;
+			padding-top: 10px;
+		}
+		
+		@include media('<=xxs') {
+			margin-bottom: 25px;
+		}
 	}
 	
 	&__title {
 		margin-bottom: 37px;
 		max-width: 360px;
+	
+		@include media('<=xs') {
+			margin-bottom: 24px;
+		}
 	}
 	
 	&__text {
@@ -43,5 +81,12 @@
 		transform: scale(1.47);
 		transform-origin: top left;
 		align-self: center;
+		
+		@include media('<=md') {
+			position: absolute;
+			transform: none;
+			@include range(550px, 390px, 960px, 360px, "width");
+			@include range(-55px, -40px, 960px, 360px, "right");
+		}
 	}
 }

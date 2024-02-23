@@ -52,11 +52,14 @@ $breakpoints: (
 	--container: 1600px;
 	--gap: 24px;
 	
-	@include media('<=xs') {
+	@include media('<=xxs') {
+		--gap: 20px;
+	}
+	
+	@include media('<=xxxs') {
 		--gap: 16px;
 	}
 }
-
 
 body, html {
 	box-sizing: border-box;
@@ -69,13 +72,17 @@ body, html {
 	min-height: 100vh;
 	display: flex;
 	flex-flow: column nowrap;
+}
+
+body {
 	overflow-x: hidden;
 }
-// .main { flex: 1 0 auto; }
+
 .footer { 
 	flex: 0 0 auto; 
 	margin-top: auto; 
 }
+
 .sprite {
 	display: none;
 }

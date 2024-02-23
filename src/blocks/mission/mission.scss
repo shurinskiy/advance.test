@@ -1,6 +1,10 @@
 .mission {
 	$self: &;
 	margin-bottom: 105px;
+	
+	@include media('<=xs') {
+		margin-bottom: 50px;
+	}
 
 	&__inner {
 
@@ -8,6 +12,10 @@
 
 	&__title {
 		margin-bottom: 20px;
+		
+		@include media('<=xs') {
+			margin-bottom: 15px;
+		}
 	}
 
 	&__text {

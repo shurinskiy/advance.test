@@ -1,6 +1,14 @@
 .system {
 	$self: &;
 	margin-bottom: 165px;
+	
+	@include media('<=sm') {
+		margin-bottom: 120px;
+	}
+	
+	@include media('<=xs') {
+		margin-bottom: 70px;
+	}
 
 	&__inner {
 
@@ -8,12 +16,20 @@
 
 	&__title {
 		margin-bottom: 22px;
+		
+		@include media('<=xs') {
+			margin-bottom: 16px;
+		}
 	}
 
 	&__text {
 		max-width: 540px;
 		line-height: 1.6;
 		margin-bottom: 65px;
+		
+		@include media('<=xxs') {
+			margin-bottom: 45px;
+		}
 	}
 
 	&__items {
@@ -22,6 +38,23 @@
 		grid-gap: 50px 47px;
 		grid-auto-rows: minmax(270px, auto);
 		counter-reset: item_ctr;
+		
+		@include media('<=xlg') {
+			grid-gap: 30px;
+		}
+		
+		@include media('<=lg') {
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 40px;
+		}
+		
+		@include media('<=md') {
+			grid-gap: 32px;
+		}
+		
+		@include media('<=sm') {
+			grid-template-columns: 1fr;
+		}
 	}
 
 	&__item {
@@ -30,6 +63,14 @@
 		padding: 33px 45px;
 		background-color: #F4F4F4;
 		border-radius: 20px;
+		
+		@include media('<=xs') {
+			padding: 30px;
+		}
+		
+		@include media('<=xxs') {
+			padding: 20px 30px 16px;
+		}
 	}
 
 	&__i-title {
@@ -39,6 +80,10 @@
 		display: flex;
 		align-items: center;
 		gap: 22px;
+		
+		@include media('<=xxs') {
+			gap: 10px;
+		}
 
 		&::before {
 			display: flex;
@@ -53,6 +98,10 @@
 			aspect-ratio: 1;
 			background-color: #FFD600;
 			border-radius: 10px;
+			
+			@include media('<=xxs') {
+				width: 39px;
+			}
 		}
 	}
 

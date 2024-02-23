@@ -2,12 +2,27 @@
 	$self: &;
 	display: flex;
 
+	@include media('<=md') {
+		flex-flow: column nowrap;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+		background-color: #fff;
+		padding: 50px 20px 20px;
+	}
+
 	&__close {
 		@extend %reset-button;
 		display: none;
+		position: absolute;
+		z-index: 1;
+		top: 15px;
+		right: 15px;
+
+		@include media('<=md') {
+			display: block;
+		}
 
 		svg {
-			width: 23px;
+			width: 25px;
 			aspect-ratio: 1;
 		}
 	}
@@ -17,6 +32,11 @@
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
+
+		@include media('<=md') {
+			flex-flow: column nowrap;
+			align-items: center;
+		}
 	}
 
 	&__link {
@@ -25,12 +45,21 @@
 		text-decoration: none;
 		white-space: nowrap;
 		color: #2A3848;
-		padding: 0 10px;
-
+		padding: 0 7px;
+		
+		@include media('<=md') {
+			display: block;
+			padding: 15px 0;
+		}
+	
 		&_accent {
 			display: inline-flex;
 			padding: 12px 22px;
-			margin-right: 10px;
+			margin-right: 7px;
+			
+			@include media('<=md') {
+				margin: 0 0 30px;
+			}
 		}
 	}
 }

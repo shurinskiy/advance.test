@@ -1,11 +1,19 @@
 .route {
 	$self: &;
 	margin-bottom: 105px;
+	
+	@include media('<=xs') {
+		margin-bottom: 50px;
+	}
 
 	&__inner {
 		background-color: #F8F8F8;
 		border-radius: 30px;
 		padding: 47px 60px;
+		
+		@include media('<=xs') {
+			padding: 40px 30px;
+		}
 	}
 
 	&__title {
@@ -15,16 +23,41 @@
 		border-bottom: 1px solid #DDEBF9;
 		padding-bottom: 30px;
 		margin-bottom: 45px;
+		
+		@include media('<=xs') {
+			padding-bottom: 20px;
+			margin-bottom: 40px;
+			font-size: 18px;
+		}
 	}
 
 	&__items {
 		display: flex;
 		justify-content: space-between;
 		gap: 24px;
+		
+		@include media('<=xlg') {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 70px 24px;
+		}
+		
+		@include media('<=lg') {
+			grid-template-columns: repeat(3, 1fr);
+		}
+		
+		@include media('<=md') {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@include media('<=xs') {
+			gap: 19px 24px;
+			grid-template-columns: 1fr;
+		}
 	}
 
 	&__item {
-
+		grid-column: span 1;
 	}
 
 	&__i-title {
@@ -35,6 +68,10 @@
 		gap: 17px;
 		padding-left: 7px;
 		margin-bottom: 17px;
+		
+		@include media('<=xs') {
+			padding: 0;
+		}
 	}
 
 	&__icon {

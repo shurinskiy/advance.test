@@ -2,4 +2,5 @@
 	$self: &;
 	font-weight: 700;
 	font-size: 36px;
+	@include range(36px, 26px, 1600px, 480px);
 }

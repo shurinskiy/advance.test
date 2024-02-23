@@ -1,17 +1,47 @@
 .advantage {
 	$self: &;
 	margin-bottom: 105px;
+	
+	@include media('<=xs') {
+		margin-bottom: 40px;
+	}
 
 	&__items {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		grid-gap: 55px 120px;
+		
+		@include media('<=xxlg') {
+			grid-gap: 55px 60px;
+		}
+		
+		@include media('<=xlg') {
+			grid-gap: 55px 30px;
+		}
+		
+		@include media('<=lg') {
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 55px 60px;
+		}
+		
+		@include media('<=md') {
+			grid-gap: 55px 30px;
+		}
+		
+		@include media('<=xs') {
+			grid-template-columns: 1fr;
+			grid-gap: 29px 30px;
+		}
 	}
 
 	&__item {
 		display: flex;
 		align-items: flex-start;
 		gap: 23px;
+		
+		@include media('<=xs') {
+			gap: 20px;
+		}
 	}
 
 	&__icon {
@@ -43,10 +73,22 @@
 		margin-bottom: 15px;
 		max-width: 230px;
 		line-height: 1.6;
+		
+		@include media('<=xxs') {
+			margin: 0;
+			line-height: 1.4;
+			font-size: 16px;
+			padding: 0;
+		}
 	}
 	
 	&__i-text {
 		color: #687186;
 		line-height: 1.7;
+		
+		@include media('<=xxs') {
+			line-height: 1.6;
+			font-size: 14px;
+		}
 	}
 }
