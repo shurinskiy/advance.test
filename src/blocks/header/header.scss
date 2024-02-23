@@ -62,7 +62,7 @@
 		max-width: 882px;
 
 		@include media('<=md') {
-			width: 100%;
+			margin: 0;
 			height: 100vh;
 			height: 100dvh;
 			position: fixed;
