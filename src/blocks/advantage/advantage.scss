@@ -37,27 +37,27 @@
 	&__item {
 		display: flex;
 		align-items: flex-start;
-		gap: 23px;
-		
-		@include media('<=xs') {
-			gap: 20px;
-		}
 	}
 
 	&__icon {
 		display: block;
 		flex-shrink: 0;
 		width: 62px;
-		aspect-ratio: 1;
+		height: 62px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		background-color: #FFD600;
 		border-radius: 10px;
+		margin-right: 23px;
+		
+		@include media('<=xs') {
+			margin-right: 20px;
+		}
 		
 		svg {
 			width: 28px;
-			aspect-ratio: 1;
+			height: 28px;
 		}
 	}
 

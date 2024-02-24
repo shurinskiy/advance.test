@@ -79,11 +79,6 @@
 		margin-bottom: 14px;
 		display: flex;
 		align-items: center;
-		gap: 22px;
-		
-		@include media('<=xxs') {
-			gap: 10px;
-		}
 
 		&::before {
 			display: flex;
@@ -95,11 +90,13 @@
 			font-weight: 700;
 			font-size: 16px;
 			width: 42px;
-			aspect-ratio: 1;
+			height: 42px;
+			margin-right: 22px;
 			background-color: #FFD600;
 			border-radius: 10px;
 			
 			@include media('<=xxs') {
+				margin-right: 10px;
 				width: 39px;
 			}
 		}
