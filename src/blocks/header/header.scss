@@ -33,7 +33,7 @@
 
 		svg {
 			width: 23px;
-			aspect-ratio: 1;
+			height: 23px;
 		}
 	}
 
@@ -47,10 +47,10 @@
 		}
 		
 		&.logo {
-
+			
 			@include media('<=xxs') {
+				margin-right: 5px;
 				font-size: 16px;
-				gap: 5px;
 			}
 		}
 	}
